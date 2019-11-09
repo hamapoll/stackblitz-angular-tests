@@ -1,4 +1,9 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see how shit happens :)
-</p>
+<hello name="{{ Name }}"></hello>
+
+<button (click)="Happeln.push('Hansi')">Add Hansi</button>
+
+<br/><br/><br/>
+
+<div *ngFor='let lHappel of Happeln'>
+  <my-app-happel [HappelName]='lHappel'></my-app-happel>
+</div>

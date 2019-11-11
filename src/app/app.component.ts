@@ -32,4 +32,9 @@ export class AppComponent implements OnInit, AfterViewInit, OnChanges, DoCheck, 
   ngAfterViewChecked() {
     console.log ( 'DoCAfterViewChecked' );
   }
+
+  addHansi() {
+    this.Happeln.push('Hansi');
+    console.log ( 'push' );
+  }
 }
